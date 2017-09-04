@@ -1,0 +1,405 @@
+1.Internet 国际互联网
+2.world wide web www 万维网--提供网页浏览服务
+  www.163.com
+  mail.163.com
+3.URL统一资源定位符:在万维网上，统一定位网络资源的格式。
+格式:
+协议://IP或域名:端口/URI
+协议://IP或域名:端口/  找到网站根目录
+URI  服务器上的子目录及文件名--统一资源标识符
+-------------------------------------------------1.HTML 概念:HyperText Markup Language
+超文本: 超链接 超级文本
+标记:<> 
+2语言:
+2.html语言有一个解释器，这个解释器用来将html语言翻译成五彩缤纷的网页
+html标记的翻译器-->浏览器
+只要有浏览器的设备就能够翻译html就能够访问网站
+电脑、手机、平板、智能电视、智能设备上面只要浏览器就能翻译html语言
+不管这些设备软件和硬件是什么只要有浏览器就能够翻译html
+得出结论:
+html语言能够跨平台，各个软硬件平台都有浏览器
+3.HTML文档基本结构:
+<!doctype html>
+doc--document 文档
+html--html5
+告诉浏览器要按照html5标准文档来解释下面的代码
+<html>代表整篇文档开始
+     <head>
+          一般放置整篇文档的配置信息
+         <title>整篇文档的标题</title>
+         <meta charset="gb2312">设置字符集
+     </head>文档的头部
+     <body>
+           浏览器窗口显示内容
+     </body>文档正文
+  </html>代表整篇文档结束
+说明:所有标记要么放到<head></head>，要么放到<body></body>之间
+4.<head></head>有哪些标记?
+  (1)<title></title> 设置整篇文档的标题
+  (2)<meta > 元信息标记--设置整篇文档相关信息
+  (3)<script></script>嵌入脚本（不用管）
+  (4)<style></style>嵌入css样式（不用管）
+  (5)<link>引入外部独立css样式表文件（不用管）
+  (6)<base>（不用管）
+  (7)<basefont>（不用管）
+5.文档类型的分类:
+ (1)老的文档类型HTML4.01严格型
+     HTML4.01 Strict
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+(2)过去的文档类型XHTML1.0 过渡型
+  XHTML1.0 transitional
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+(3)现在文档类型 html5
+ <!doctype html>
+6.网站前端三层
+   (x)html 结构层--html结构
+   css   表现层--决定html的样式
+   javascript 动作层--决定html如何交互
+7.标记的分类:
+  (1)单标记
+      <br> <input> <hr> <img> <frame> <meta> 
+  (2)双标记
+     <font></font><h3></h3><p></p>等等
+8.HTML基本语法:
+   <标记名 属性="值" 属性="值" ></标记名>
+     举例子:
+    <font color="red" size="7" face="隶书">
+      我是帅哥
+    </font>
+ 结论:
+   <代表标记开始
+   标记名:表示这个标记的功能
+   属性="值" 表示这个标记里面的内容如何显示
+9.标记的属性和标记不能分离
+  一说属性必须得说哪一个标记的属性，属性不能单独说
+   <font color="" face=" size="" ></font>
+   <p align=""></p>
+10.HTML里面的注释
+   <!-- -->
+说明:注释是给程序员看的
+11.HTML4.01 语法比较松散--不严格--团队开发协作困难
+规范:
+--标记和属性全部小写
+--属性值必须加""
+--双标记必须双着用
+--单标记必须关闭 <img /> <input />
+--标记只能嵌套不能交叉
+
+1.internet 国际互联网:全球的电脑、手机或网络设备互联的这个全球网络
+2.Internet有很多的应用:
+   --玩网游
+   --聊天
+   --看视频
+   --云盘
+   --浏览网页 www world wide web 简称web  --等等
+  3. 网址 :  http://www.163.com/
+   163.com 域名 
+   www主机名---默认名字--提供的是网页浏览器服务（www world wide web）
+ mail主机--提供邮箱服务
+mail.163.com
+www.jd.com pc端京东
+  m.jd.com  移动端京东
+-----------------------------------------------
+4.HTML HyperText Markup Language
+  HyperText 超文本--超级文本
+  Markup 标记 带<>
+  Language 语言
+----------------------------------------------
+非常重要:请准确记忆和描述
+5.URL概述:在万维网上有好多好多亿的网页及相关的资源（图片、文件、视频、声音等等），要访问这些资源，必须得有一个统一而且固定格式就像邮包的格式地址格式一样，这种格式称为统一资源定位符（在万维网上统一定位资源的格式）
+6.URL统一资源定位符:格式
+  协议://Ip或域名:端口号/URI？传给服务器的数据
+  协议:   http://  https:// ftp:// mailto://
+  IP 或域名
+  :端口号  :80  :8080  
+  URI 统一资源标识符（网站根目录下面的子目录及文件名）
+http://news.163.com/17/0410/09/CHLAUP1500018AOR.html
+  http://  协议:通信标准
+  news.163.com 域名 或123.125.50.7 IP
+  默认:80 
+  URI统一资源标识符:网站服务器根木录后面的子目录及文件名17/0410/09/CHLAUP1500018AOR.html
+http://www.bjlink32.com/wan/index.html
+http:// 协议
+www.bjlink32.com 域名访问到网站根目录web/
+wan/index.html URI web/下面的子目录及文件名
+10.综合实验:演示开发过程
+
+复习内容:
+1.Internet 国际互联网
+2.internet有很多的应用
+    --聊天
+    --玩网游
+    --在线视频
+    --云盘
+    --浏览器网页---www--world wide web万维网
+3.做网站--做web
+   网站前端工程师--web前端工程师
+4.URL统一资源定位符:在互联网定位网络资源的地址格式
+协议://IP或域名:端口号/uri
+http://news.163.com/17/0412/13/CHQV1J710001875O.htmlhttp://img2.126.net/xoimages/default/2017/news/1200x125.jpg
+uri统一资源标识符
+  --网站根目录下的子目录及文件名
+http://www.bjlink32.com/sxx/index.html
+http://  协议
+www.bjlink32.com 域名
+sxx/index.html URI统一资源标识符
+5.编辑器:
+   初：记事本
+   中期: sublime
+  后期 :IDE webstorm hbuilder 
+-----------------------------------
+1.html  HyperText Markup Language 超文本标记语言
+ 超文本
+     --超链接
+     --超级文本:不仅能够显示文字还能显示图片、声音、视频、动画等等
+  标记:<>
+  语言
+2.HTML编译器--浏览器
+  服务器发过来的是html语言
+  而用户看到的是五彩缤纷的网页
+3.HTML基本结构:每一篇html文档基本结构都相同
+ <!doctype html>文档类型声明:告诉浏览器按照html5标准来对当前文档进行解释
+ <html>代表整篇html文档开始
+    <head>
+      文档相关的设置信息
+      <meta charset="字符集">
+      <title></title>文档的标题
+    </head>
+    <body>
+       浏览器窗口
+    </body>
+ </html>代表整篇html文档结束
+4.标记的分类:
+   --单标记<br>  <input > <hr> <frame>
+  <meta>
+   --双标记
+     <font></font><p></p>等
+5.HTML基本语法:
+   <标记名 属性="值" 属性="值"></标记名>
+  标记名:代表标记的功能--干什么的
+  属性="值" 标记具体如何显示--具体怎么干
+  <font color="red" face="隶书" size="7">我是帅哥</font>
+标记:
+1.标题标记:自己占一行加粗，上面空一行，下面空一行
+<h1-6 align="水平对齐方式left默认/center/right"></h1-6>
+2.常用的特殊字符
+   空格 &nbsp;
+   版权符  &copy;
+   >>     &raquo;
+   <  &lt;
+   >  &gt; 
+3.html注释
+  <!--注释内容-->
+4.文字标记
+ <font color="文字颜色" face="字体名称" size="1-7文字大小默认3"></font>
+5.文字修饰标记
+  加粗  <b></b> <strong></strong>
+  倾斜  <i></i>  <em></em>
+  下划线 <u></u>
+  删除线<del></del>
+  地址<address></address>
+  上标 <sup></sup>
+  下标 <sub></sub>
+6.段落标记:一个p相当于一个回车换行，/p相当于一个回车换行
+   <p align="水平对齐方式left默认/center/right"></p>
+1.横线:
+  <hr width="宽度" size="粗细" color="颜色" align="水平对齐方式left/center默认/right" noshade是否有阴影>
+2.预格式化:保留源代码中空格，不忽略源代码中的空格
+   <pre></pre>
+列表:
+1.网站中列表的功能:
+   --显示行式数据（一行一行的）
+   --二级菜单或导航
+2.html里面的列表的分类:
+ --无序列表ul  unordered list  ul
+  --有序列表    ordered list    ol 
+  --定义列表    define  list   dl
+  --菜单列表    menu list   menu
+  --目录列表    directory list  dir
+3.单词:
+   list 列表
+   ordered有序的
+   unordered无序的
+   directory目录
+   menu 菜单
+   define定义
+4.无序列表:ul
+   <ul type="项目符号disc/circle/square">
+     <li type="disc/circle/square">列表项</li>
+   </ul>
+5.有序列表:ol
+   <ol type="1/a/A/i/I" start="从第几项开始">
+       <li></li>
+   </ol>
+6.定义列表:
+   <dl>
+      <dt>定义</dt>
+      <dd>解释1</dd>
+      <dd>解释2</dd>
+      <dd>解释3</dd>
+      <dt>定义</dt>
+      <dd>解释1</dd>
+      <dd>解释2</dd>
+      <dd>解释3</dd>
+      <dt>定义</dt>
+      <dd>解释1</dd>
+      <dd>解释2</dd>
+      <dd>解释3</dd>
+   </dl>
+1.超链接标记
+ <a href="链接的资源url#name锚点名字" title="每个标记都有的属性，全局属性，鼠标划上去显示一个小框提示" target="_self本窗口覆盖显示/_blank新窗口显示href资源"/_top/_parent/指定框架(后面讲)></a>
+2.超链接（从使用角度，根据href值不同）分类:
+(1)内部链接:访问资源是本网站其他页面（大量使用）
+   <a href="test.html">内部链接</a>
+
+(2)外部链接（外链）:访问资源是其他网站的页面
+   <a href="http://www.baidu.com">外部链接</a>
+(3)图片链接:点击图片访问指定资源
+  <a href=""> 
+   <img src="路径/文件名" />
+  </a>
+(4)邮件链接:点击链接，自动弹出邮件发送客户端软件，将收件人地址自动填充。
+   <a href="mailto:asdf@sfd.com">邮箱链接（联系我们）</a>
+ (5)锚链接:也叫书签链接，主要用来在页面中定位
+   创建锚点:<a name="锚点名称"></a>
+   访问锚点:<a href="#锚点名称"></a>
+ 到哪里哪里定义锚点
+  通过超链接访问
+------------------------------------------------------------------------
+1.插入图片
+  <img src="图片来源" alt="替换文本" title="全局属性每个标记都会有提示信息" align="图片水平对齐方式left默认/right-----top/middle/bottom图片后面的文字的对齐方式" width="像素/百分比" height="" />
+说明:路径分为：
+   相对路径（从当前文档路径开始）
+   绝对路径（从盘符开始）-不可能用
+2.移动标记（了解）
+  <marquee></marquee>
+3.插入多媒体--插入音频.mp3 .midi 插入视频.avi
+  要求:会用<embed/>插入音频即可
+<embed src="资源目录/文件名" hidden="是否隐藏面包" />
+4.预备知识
+  网站中的视频现在除了优酷、土豆等专业的视频
+  在网站中基本都是flash视频格式、动画格式，它们的播放器都是flash player ，网页想要能够播放这些视频或动画必须安装flash player插件
+  flash视频格式:
+      优势:流形式播放,支持边下载边播放           品质较高，体积小
+      .flv .f4v
+  flash动画格式:
+        .swf
+---------------------------------------------------------------------------
+1.如何看待标记？
+  答:应该把每一个标记，都想象成为一个盒子（矩形），每个盒子是一个容器。
+2.做实验的困难？
+  答:定位困难--布局困难--没有学
+3.布局:就是把你想要放到东西，放到应该放的位置上
+  定位
+4.布局常用方法:
+      --表格（现在用的比较多的html4.01）
+      --div (将来学习css主要用到的标记)
+      --frame （将来网站管理后台主要用到的）
+1.表格的功能:
+   --显示行列式数据（举例:课程表、成绩表、工资表、出勤表等等）
+   --布局（定位，把你想定位的标记放到<td></td>这个容器中[<td>单元格</td>]）
+2.表格标记:
+  <table border="表格的边框" width="表格的宽度" height="表格的高度" bgcolor="表格的背景颜色" background="表格的背景图片"  cellspacing="单元格之间的间距" cellpadding="单元格里面的内容距离边框的距离" align="表格的水平对齐方式left/center/right">
+     <tr>
+         <td></td><td></td></td></td>
+     </tr>
+  </table>
+ 说明:cell单元格 
+3.表格中的行:
+   <tr align="单元格中内容水平对齐方式left/center/right" valign="单元格中内容垂直对齐方式top/middle/bottom"></tr>
+4.表格中单元格属性:
+   <table>
+      <tr>
+           <td align="单元格中内容水平对齐方式left/center/right" valign="单元格中内容垂直对齐方式top/middle/bottom" bgcolor="" background="" width="" height="" colspan="跨列合并单元格" rowspan="跨行合并单元格"></td>
+      </tr>
+   </table>  
+5.表格嵌套
+6.常用布局板式:
+  广字型--一般企业网
+  国字型--电商网站
+  上线中下型
+  混合型
+
+
+
+
+
+
+1.框架和框架集用到哪里:一般用于网站的管理后台（淘宝店铺）或管理系统（演示）
+预备知识:什么是网站的管理后台
+一个网站按照功能来分:分为前台页面和后台页面
+1000 个页面
+800用户看到的页面--前台页面
+200 管理人员上传图片、书写说明、改价格等
+网易:用户看到图片、新闻、详情--网站前台
+网易管理人员：网站编辑--上传图片、新闻、详情--网站后台--框架
+1.框架集和框架功能:把一个浏览器窗口，分割成若干个小窗口，每个独立的小窗口，可以放一个.html文档
+2.框架集和框架
+  <frameset cols="竖着分割" rows="横着分割">
+     <frame name="框架的名字" src="链接资源" />
+     <frame name="框架的名字" src="链接资源" />
+  </frameset>
+3.浮动框架:将一个独立.html页面嵌入到当前页面中
+<iframe name="" src="" width="" height="" ></iframe>
+1.表单的功能:网站获取用户信息的主要途径，获得信息准确而且可靠
+2.表单标记
+  <form name="表单名称" action="数据提交到的地址/脚本/页面" method="get默认/post">     method="get/post"  
+相同点:都是数据提交的方式，提交的数据是相同的
+不同点:get原理：数据和HTML文档的头部<head></head>信息一起提交
+特点:大小受到文档头部大小限制,数据附加到url?后面
+post原理:数据和HTML文档正文<body></body>之间信息一起提交
+特点: 大小没有限制,数据不会附加到url?后面.
+  </form>
+说明：什么是数据?答:数据是用户填写的或选择的表单项（信息）
+3.表单项:表单里面的项目  输入元素:
+<input type="text默认"/>输入文本框
+"password" 密码框、"radio" 单选按钮、"checkbox" 复选框
+"file" 文件域、"image" 图像域、"hidden" 隐藏域
+"button" 按钮、"reset" 重置、"submit" 提交
+<select ></select>、<textarea></textarea>
+4.输入文本框:
+  <input type="text" name="" value="默认值" max-length="最大字符数" size="多少个字符那么宽" readonly只读 disabled禁用 />
+5.密码框:<input type="password" name="" max-length="" size="" readonly disabled>
+6.单选按钮:单选按钮要是同一组的那么name值相同；如果不同组，name值不同。
+<input type="radio" name="r1" value="">提示
+<input type="radio" name="r1" value="">提示
+7.复选框:多选,name值相同也行，不同也行
+ <input type="checkbox" name="" value="">
+8.文件域：<input type="file" name="">
+8.图像域:代替submit样子，如果你觉得submit不好看，那么你可以使用ps做一个图代替submit
+ <input type="image" src="">
+9.按钮:<input type="button" name="" value="按钮">
+10.重置按钮:将所有表单项重置称为默认值而不是清空
+  <input type="reset" name="" value="">
+11.提交按钮:点击提交按钮后，浏览器自动将表单项数据发送给action所以所指地址
+<input type="submit" name="sub" value="">
+12.select标签:单选下拉菜单和多选列表
+--单选下拉菜单
+<select name="">
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+</select>
+--多选列表
+<select name="" size="大小" multiple多选ctrl shift>
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+</select>
+13.文本域:例如新浪微博，发表微博；百度贴吧，发布帖子
+  <textarea name="" cols="多少个字符宽度" rows="多少个字符高度"></textarea>
+Href与src的关系:
+href 表示超文本引用（hypertext reference），在 link和a 等元素上使用。
+src 表示来源地址，在 img、script、iframe 等元素上。
+src 的内容，是页面必不可少的一部分，是引入。
+href 的内容，是与该页面有关联，是引用。区别就是，引入和引用。
+1.HTML网站项目指导
+   --项目组=UI团队+前端+软件团队
+       --UI团队--设计网站整体效果图
+       --前端团队--切图、重构、数据交互
+       --后台团队--接口书写、数据提供、业务逻辑处理
+   --HTML项目怎么进行开发？
+2.地址栏非IE图标
+3.嵌入搜索引擎
+4.嵌入百度地图
+5.网站发布
